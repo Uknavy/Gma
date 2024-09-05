@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>WHY G Dashboard</title> 
+  <link rel="stylesheet" href="styles.css"> 
+  <script type="text/javascript">
+        function checkPassword() {
+            var password = prompt("Please enter your password:");
+            if (password !== "bfrmamager") {
+                document.body.innerHTML = "Unauthorized access!";
+            }
+        }
+        window.onload = checkPassword;
+    </script> 
+ </head> 
+ <body> <!-- Artist Information --> 
+  <header> 
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStP_fEWGXRg60n_Kon5opczblwT7pQ5kV3aw&amp;s" alt="BNE Majorly" class="artist-photo"> 
+   <h1>BNE Majorly</h1> 
+  </header> <!-- Current Release Section --> 
+  <div class="release-section"> 
+   <h2>Current Release</h2> 
+   <p><strong>Song Title:</strong> Dem Dead <a href="https://youtu.be/JFT80PuVLWY?si=soW68zceRJVdaMtM" target="_blank">Watch on YouTube</a></p> 
+   <p><strong>Stats:</strong> Views: 48k | Likes: 320 | Comments: 25</p> 
+  </div> <!-- Previous Releases Section --> 
+  <div class="release-section"> 
+   <h2>Previous Releases</h2> 
+   <ul> 
+    <li><strong>Song Title: Vibe</strong> - Views: 30K</li> 
+    <li><strong>Song Title: Major Moves</strong> - Views: 25K</li> 
+   </ul> 
+  </div> <!-- Upcoming Releases Section --> 
+  <div class="release-section"> 
+   <h2>Upcoming Releases</h2> 
+   <ul> 
+    <li><strong>New Single</strong> - Release Date: October 2024</li> 
+    <li><strong>Album</strong> - Release Date: January 15, 2025</li> 
+   </ul> 
+  </div> <!-- Press Coverage Section --> 
+  <div class="press-coverage"> 
+   <h2>Press Coverage</h2> 
+   <ul> 
+    <li><strong>Article in Toronto Star</strong> - Aug 2024 - <a href="https://torontostar.com/bne-majorly-article" target="_blank">Toronto Star</a></li> 
+    <li><strong>Featured in HipHop Canada</strong> - August 2024 - <a href="https://hiphopcanada.com/bne-majorly-feature" target="_blank">HipHop Canada</a></li> 
+   </ul> 
+  </div> <!-- Payment Info Section --> 
+  <div class="payment-info"> 
+   <h2>Payment Info</h2> 
+   <p>Total Due: $500</p> 
+   <p>Last Payment: Paid $200 on Aug 20, 2024</p> 
+   <p>Next Payment Due: $300 on Sep 15, 2024</p> 
+  </div> <!-- Distribution Company --> 
+  <div class="distribution-info"> 
+   <h2>Distribution</h2> 
+   <p>Distribution by Believe Music Canada</p> 
+  </div> 
+ </body>
+</html>

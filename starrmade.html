@@ -1,46 +1,66 @@
 <!doctype html>
 <html lang="en"> 
  <head> 
-  <script type="text/javascript">
-    var password = prompt("Please enter your password:");
-    if (password !== "starrmade123") {
-        document.body.innerHTML = "Unauthorized access!";
-    }
-</script> 
   <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>StarrMade Dashboard</title> 
-  <link rel="stylesheet" href="styles.css"> 
+  <link rel="stylesheet" href="artist.css"> 
+  <script type="text/javascript">
+        function checkPassword() {
+            var password = prompt("Please enter your password:");
+            if (password !== "starrmade111") {
+                document.body.innerHTML = "Unauthorized access!";
+            } else {
+                document.getElementById("content").style.display = "block";
+            }
+        }
+        window.onload = function() {
+            document.getElementById("content").style.display = "none";
+            checkPassword();
+        };
+    </script> 
+  <style>
+    /* Inline CSS for artist name color */
+    h1 {
+        color: white;
+    }
+  </style> 
  </head> 
- <body> 
-  <header> 
-   <img src="https://smartcdn.gprod.postmedia.digital/torontosun/wp-content/uploads/2023/03/GizzleStarrMade-1-e1679098854127.jpg?quality=90&amp;strip=all&amp;w=576&amp;h=432&amp;type=webp&amp;sig=KKTbwOih_-3Da_HEPwgUSg" alt="StarrMade" class="artist-photo"> 
-   <h1>StarrMade</h1> 
-  </header> 
-  <div class="release-section"> 
-   <h2>Current Release</h2> 
-   <p><strong>Song Title:</strong> [Title not provided] <a href="https://youtu.be/-nOTTSr-c4o?si=j2Ld9JG5FUmyhi74" target="_blank">Watch on YouTube</a></p> 
-   <p><strong>Stats:</strong> Views: [View count not provided]</p> 
-  </div> 
-  <div class="release-section"> 
-   <h2>Previous Releases</h2> 
-   <ul> <!-- Add previous releases if available --> 
-   </ul> 
-  </div> 
-  <div class="press-coverage"> 
-   <h2>Press Coverage</h2> 
-   <ul> <!-- Add press links here if available --> 
-   </ul> 
-  </div> 
-  <div class="payment-info"> 
-   <h2>Payment Info</h2> 
-   <p>Total Due: $[Amount not provided]</p> 
-   <p>Last Payment: Paid $[Amount not provided] on [Date not provided]</p> 
-   <p>Next Payment Due: $[Amount not provided] on [Date not provided]</p> 
-  </div> 
-  <div class="distribution-info"> 
-   <h2>Distribution</h2> 
-   <p>Distribution by [Distribution Company not provided]</p> 
+ <body> <!-- Hide content until password is correct --> 
+  <div id="content" style="display: none;"> <!-- Artist Information --> 
+   <header> 
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStP_fEWGXRg60n_Kon5opczblwT7pQ5kV3aw&amp;s" alt="BNE Majorly" class="artist-photo"> 
+    <h1>StarrMade</h1> 
+   </header> <!-- Current Release Section --> 
+   <div class="release-section"> 
+    <h2>Current Release</h2> 
+    <p><strong>Song Title:</strong> Victim <a href="https://youtu.be/JosvcH7u1FA?si=VLLnLRhPjKT0E6Mz" target="_blank">Watch on YouTube</a></p> 
+    <p><strong>Stats:</strong> Views: | Likes: | Comments: </p> 
+   </div> <!-- Previous Releases Section --> 
+   <div class="release-section"> 
+    <h2>Previous Releases</h2> 
+    <ul> 
+     <li><strong>Song Title: Certified</strong> - Views: 109k</li> 
+    </ul> 
+   </div> <!Press Coverage Section --> 
+   <div class="press-coverage"> 
+    <h2>Press Coverage</h2> 
+    <ul> 
+     <li><strong>Featured in The Source Magazine</strong> - 2022 - <a href="https://thesource.com/2022/01/02/ovo-sound-artist-smiley-releases-new-single-venice-beach-feat-golde-london/" target="_blank">OVO Sound Artist Smiley</a></li> 
+     <li><strong>Featured in Complex Magazine</strong> - 2022 - <a href="https://www.complex.com/music/a/alex-nino-gheciu/golde-london-how-can-i/" target="_blank">Toronto's Golde London</a></li> 
+    </ul> 
+   </div> </ul> 
+   </div> <!-- Payment Info Section --> 
+   <div class="payment-info"> 
+    <h2>Payment Info</h2> 
+    <p>Total Due: $0</p> 
+    <p>Last Payment: </p> 
+    <p>Next Payment Due:</p> 
+   </div> <!-- Distribution Company --> 
+   <div class="distribution-info"> 
+    <h2>Distribution</h2> 
+    <p>Distribution by: United Masters</p> 
+   </div> 
   </div> 
  </body>
 </html>

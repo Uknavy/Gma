@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+header img {
+    width: 150px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+#artist-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.artist-card {
+    width: 180px; /* Adjust size as needed */
+    margin: 15px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.artist-card img {
+    width: 120px; /* Adjust size as needed */
+    height: 120px; /* Adjust size as needed */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.artist-card h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.artist-card p {
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer h4 {
+    margin: 0 0 15px;
+    font-size: 20px;
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.partner-logos img {
+    width: 120px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.partner-logos img {
+    width: 120px; /* Ensure logos are appropriately sized */
+    height: auto; /* Maintain aspect ratio */
+}

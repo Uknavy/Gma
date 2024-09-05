@@ -19,8 +19,13 @@ header img, footer .partner-logo {
     border-radius: 50%;
 }
 
-h1, h2 {
-    color: white; /* Updated color to white */
+h1 {
+    color: white; /* Keeping the h1 color white for the main heading */
+    margin: 10px 0;
+}
+
+h2 {
+    color: black; /* Updated color to black for section headings */
     margin: 10px 0;
 }
 

@@ -1,47 +1,66 @@
-<!--<!doctype html-->
+<!doctype html>
 <html lang="en"> 
  <head> 
-  <script type="text/javascript">
-    var password = prompt("Please enter your password:");
-    if (password !== "goldelondon123") {
-        document.body.innerHTML = "Unauthorized access!";
-    }
-</script> 
   <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>Golde London Dashboard</title> 
   <link rel="stylesheet" href="styles.css"> 
+  <script type="text/javascript">
+        function checkPassword() {
+            var password = prompt("Please enter your password:");
+            if (password !== "goldelondon123") {
+                document.body.innerHTML = "Unauthorized access!";
+            } else {
+                document.getElementById("content").style.display = "block";
+            }
+        }
+        window.onload = function() {
+            document.getElementById("content").style.display = "none";
+            checkPassword();
+        };
+    </script> 
+  <style>
+    /* Inline CSS for artist name color */
+    h1 {
+        color: white;
+    }
+  </style> 
  </head> 
- <body> 
-  <header> 
-   <img src="https://m.media-amazon.com/images/M/MV5BZGIwN2UxMjYtYTg0OS00MTliLWIyYWYtMGE5MWExYjI4ZTI4XkEyXkFqcGdeQXVyOTk2MjMzNjU@._V1_.jpg" alt="Golde London" class="artist-photo"> 
-   <h1>Golde London</h1> 
-  </header> 
-  <div class="release-section"> 
-   <h2>Current Release</h2> 
-   <p><strong>Song Title:</strong> [Title not provided] <a href="[Link not provided]" target="_blank">Watch on YouTube</a></p> 
-   <p><strong>Stats:</strong> Views: 7.4k</p> 
-  </div> 
-  <div class="release-section"> 
-   <h2>Previous Releases</h2> 
-   <ul> 
-    <li><strong>Song Title: Dem Dead</strong> - Views: 48k</li> 
-   </ul> 
-  </div> 
-  <div class="press-coverage"> 
-   <h2>Press Coverage</h2> 
-   <ul> <!-- Add press links here if available --> 
-   </ul> 
-  </div> 
-  <div class="payment-info"> 
-   <h2>Payment Info</h2> 
-   <p>Total Due: $[Amount not provided]</p> 
-   <p>Last Payment: Paid $[Amount not provided] on [Date not provided]</p> 
-   <p>Next Payment Due: $[Amount not provided] on [Date not provided]</p> 
-  </div> 
-  <div class="distribution-info"> 
-   <h2>Distribution</h2> 
-   <p>Distribution by [Distribution Company not provided]</p> 
+ <body> <!-- Hide content until password is correct --> 
+  <div id="content" style="display: none;"> <!-- Artist Information --> 
+   <header> 
+    <img src="https://m.media-amazon.com/images/M/MV5BZGIwN2UxMjYtYTg0OS00MTliLWIyYWYtMGE5MWExYjI4ZTI4XkEyXkFqcGdeQXVyOTk2MjMzNjU@._V1_.jpg" alt="Golde London" class="artist-photo"> 
+    <h1>Golde London</h1> 
+   </header> <!-- Current Release Section --> 
+   <div class="release-section"> 
+    <h2>Current Release</h2> 
+    <p><strong>Song Title:</strong> TBA <a href="https://youtu.be/sample-link" target="_blank">Watch on YouTube</a></p> 
+    <p><strong>Stats:</strong> Views: | Likes: | Comments: </p> 
+   </div> <!-- Previous Releases Section --> 
+   <div class="release-section"> 
+    <h2>Previous Releases</h2> 
+    <ul> 
+     <li><strong>Song Title: Dem Dead</strong> - Views: 48k</li> 
+     <li><strong>Song Title: How Can I Lose</strong> - Views: 106k </li> 
+    </ul> 
+   </div> <!-- Press Coverage Section --> 
+   <div class="press-coverage"> 
+    <h2>Press Coverage</h2> 
+    <ul> 
+     <li><strong>Featured in The Source Magazine</strong> - 2022 - <a href="https://thesource.com/2022/01/02/ovo-sound-artist-smiley-releases-new-single-venice-beach-feat-golde-london/" target="_blank">OVO Sound Artist Smiley</a></li> 
+     <li><strong>Featured in Complex Magazine</strong> - 2022 - <a href="https://www.complex.com/music/a/alex-nino-gheciu/golde-london-how-can-i/" target="_blank">Toronto's Golde London</a></li> 
+    </ul> 
+   </div> <!-- Payment Info Section --> 
+   <div class="payment-info"> 
+    <h2>Payment Info</h2> 
+    <p>Total Due: $0</p> 
+    <p>Last Payment: </p> 
+    <p>Next Payment Due:</p> 
+   </div> <!-- Distribution Company --> 
+   <div class="distribution-info"> 
+    <h2>Distribution</h2> 
+    <p>Distribution by Foundation Media</p> 
+   </div> 
   </div> 
  </body>
 </html>
